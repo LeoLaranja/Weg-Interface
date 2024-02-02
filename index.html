@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weg Leo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.querySelector(".MenuMobile").addEventListener("click", function () {
+                if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="container">
+                <div class="img-menu">
+                    <div class="area-img">
+                        <a href=""><img src="img/Parceiro-Weg-removebg-preview.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="nav-menu">
+                    <div class="MenuMobile">
+                        <div class="mm-line">
+
+                        </div>
+                        <div class="mm-line">
+
+                        </div>
+                        <div class="mm-line">
+
+                        </div>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a onmouseover="mostrar()" onmouseleave="ocultar()" class="sobre">SOBRE A WEG</a></li>
+
+                            <li><a onmouseenter="mostrar2()" onmouseleave="ocultar()" class="sobre">PRODUTOS</a></li>
+
+                            <li><a onmouseenter="mostrar3()" onmouseleave="ocultar()" class="sobre">SOLUÇÕES</a></li>
+
+                            <li><a class="hoverdif" href="">INVESTIDORES</a></li>
+
+                            <li><a onmouseenter="mostrar4()" onmouseleave="ocultar()" class="sobre">ÉTICA</a></li>
+
+                            <li><a onmouseenter="mostrar5()" onmouseleave="ocultar()" class="sobre">SUPORTE</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="busque-menu">
+                    <div class="busque-menu-nav">
+                        <nav>
+                            <ul>
+                                <a href="">
+                                    <li>Notícias</li>
+                                </a>
+                                <span>|</span>
+                                <a href="">
+                                    <li> Treinamento</li>
+                                </a>
+                                <span>|</span>
+                                <a href="">
+                                    <li> Trabalhe Conosco</li>
+                                </a>
+                                <span>|</span>
+                                <a href="loginweg.index.html" target="_blank">
+                                    <li><img src="img/Login.png" alt=""></li>
+                                </a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="busque-menu-buscar">
+                        <input name="text" type="text" class="inputtop"
+                            placeholder="Buscar por produto, categoria ou código">
+                        <img src="img/lupa.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- AQUI SÃO OS ITENS QUE APARECERÃO NO MENU -->
+    <div class="ul1" onmouseleave="ocultar()">
+        <ul>
+            <a href="">
+                <li>Isto é Weg</li>
+            </a>
+            <a href="">
+                <li>Weg em Números</li>
+            </a>
+            <a href="">
+                <li>História</li>
+            </a> <button>CLIQUE EM HISTÓRIA</button>
+            <a href="">
+                <li>Operações Weg</li>
+            </a>
+            <a href="">
+                <li>Inovação</li>
+            </a>
+            <a href="">
+                <li>Sustentabilidade</li>
+            </a>
+            <a href="">
+                <li>Nossos Negócios</li>
+            </a>
+            <a href="">
+                <li>Certificações</li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="ul2" onmouseleave="ocultar()">
+        <ul>
+            <a href="">
+                <li>Motores elétricos</li>
+            </a>
+            <a href="">
+                <li>Redutores de velocidade</li>
+            </a>
+            <a href="">
+                <li>Geração, Transmissão e Condução</li>
+            </a>
+            <a href="">
+                <li>Automação industrial</li>
+            </a>
+            <a href="">
+                <li>Building & Infrastructure</li>
+            </a>
+            <a href="">
+                <li>Critical Power</li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="ul3" onmouseleave="ocultar()">
+        <ul>
+            <a href="">
+                <li>Eficiência Energética</li>
+            </a>
+            <a href="">
+                <li>WEG Digital Solutions</li>
+            </a>
+            <a href="">
+                <li>Energia</li>
+            </a>
+            <a href="">
+                <li>Energia Solar</li>
+            </a>
+            <a href="">
+                <li>Energia Térmica</li>
+            </a>
+            <a href="">
+                <li>Agronegócio</li>
+            </a>
+            <a href="">
+                <li>Mineração</li>
+            </a>
+            <a href="">
+                <li>Açúcar & Etanol</li>
+            </a>
+            <a href="">
+                <li>Construção Civil</li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="ul4" onmouseleave="ocultar()">
+        <ul>
+            <a href="">
+                <li>Código de Ética</li>
+            </a>
+            <a href="">
+                <li>Código de Ética para Fornecedores</li>
+            </a>
+            <a href="">
+                <li>Política de Prevenção e Combate à Corrupção</li>
+            </a>
+            <a href="">
+                <li>Aviso de Privacidade</li>
+            </a>
+            <a href="">
+                <li>Canal de Denúncias</li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="ul5" onmouseleave="ocultar()">
+        <ul>
+            <a href="">
+                <li> Fale Conosco</li>
+            </a>
+            <a href="">
+                <li>Onde Comprar</li>
+            </a>
+            <a href="">
+                <li>Assistência Técnica</li>
+            </a>
+            <a href="">
+                <li>Recursos e Ferramentas</li>
+            </a>
+            <a href="">
+                <li>Perguntas Frequentes (FAQ)</li>
+            </a>
+            <a href="">
+                <li>Canal de Denúncias</li>
+            </a>
+            <a href="">
+                <li>Sala de Imprensa</li>
+            </a>
+        </ul>
+    </div>
+
+    <!-- TERMINA AQUI OS ITENS QUE APARECERÃO NO MENU -->
+
+
+    <div class="banner">
+        <video autoplay muted loop preload="auto" poster="">
+            <source src="img/products-video.mp4" type="video/mp4">
+        </video>
+        <div class="text-area">
+            <h1 class="text1">
+                Assista ao vídeo e saiba mais
+            </h1>
+            <h1 class="text2">
+                A WEG vai fundo em tudo que faz
+
+            </h1 class="text3">
+            <a href="">
+                Acesse
+            </a>
+            </h1>
+        </div>
+    </div>
+
+    <div class="area1">
+        <div class="container">
+            <div class="area1-text">
+                <h1 class="titulo">
+                    BEM-VINDO
+                </h1>
+                <h1 class="resumo">
+                    À <strong> WEG</strong>
+                </h1>
+                <h1 class="fechamento">
+                    Nossos produtos estão presentes nos 5 continentes, e juntos contribuímos um mundo mais inovador,
+                    sustentável e eficiente.
+                </h1>
+                <h1 class="saiba">
+                    <a href="">SAIBA MAIS</a>
+                </h1>
+            </div>
+
+            <div class="box">
+                <div class="area-box">
+                    <img src="img/area1 img pequena.svg" alt="">
+                    <h1 class="box-text1">
+                        Mais de
+                    </h1>
+                    <h1 class="box-text2">
+                        39.000
+                    </h1>
+                    <h1 class="box-text3">
+                        colaboradores e mais de
+                    </h1>
+                    <h1 class="box-text4">
+                        3.900
+                    </h1>
+                    <h1 class="box-text5">
+                        engenheiros
+                    </h1>
+                </div>
+            </div>
+            <div class="area1-img">
+                <img src="img/area1.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="controls-neg">
+        <img src="img/seta esquerda.png" alt="">
+        <img src="img/seta direita.png" alt="">
+    </div>
+
+    <div class="area2">
+        <div class="area2-img">
+            <div class="container">
+                <div class="area2-text">
+                    <div class="text1">
+                        <h1 class="text1-h1"> CONHEÇA NOSSAS ÁREAS DE SOLUÇÕES </h1>
+                    </div>
+                    <div class="text2">
+                        <h1 class="text2-h1"> ALIMENTOS & BEBIDAS</h1>
+                    </div>
+                    <div class="text3">
+                        <h1 class="text3-h1"> Nossas soluções confiáveis e flexíveis oportunizam a eficiência contínua e
+                            a produtividade constante que o segmento de Alimentos & Bebidas exige. Com inteligência,
+                            conectividade e durabilidade, impulsionamos a inovação que move a sua linha de produção</h1>
+                    </div>
+                    <div class="vejamais">
+                        <a href=""> VEJA + SOBRE O SEGMENTO </a>
+                    </div>
+                </div>
+                <aside class="area2-menu">
+                    <nav class="text1">
+                        <ul>
+                            <a href="" class="inicial">
+                                <li> EFICIÊNCIA ENERGÉTICA </li>
+                            </a>
+                            <a href="">
+                                <li> WEG DIGITAL SOLUTIONS </li>
+                            </a>
+                            <a href="">
+                                <li> ENERGIA </li>
+                            </a>
+                            <a href="">
+                                <li> ENERGIA SOLAR </li>
+                            </a>
+                            <a href="">
+                                <li> ENERGIA TÉRMICA </li>
+                            </a>
+                            <a href="">
+                                <li> AGRONEGÓCIO </li>
+                            </a>
+                            <a href="">
+                                <li> MINERAÇÃO </li>
+                            </a>
+                            <a href="">
+                                <li> AÇÚCAR & ETANOL </li>
+                            </a>
+                            <a href="">
+                                <li> CONSTRUÇÃO CIVIL </li>
+                            </a>
+                            <a href="">
+                                <li> SIDERURGIA </li>
+                            </a>
+                            <a href="">
+                                <li> ÁGUA </li>
+                            </a>
+                            <a href="">
+                                <li> PAPEL & CELULOSE </li>
+                            </a>
+                            <a href="">
+                                <li> OIL & GAS </li>
+                            </a>
+                            <a href="">
+                                <li> NAVAL </li>
+                            </a>
+                            <a href="">
+                                <li> MOBILIDADE ELÉTRICA </li>
+                            </a>
+                            <a href="">
+                                <li> SMART GRID </li>
+                            </a>
+                            <a href="">
+                                <li> ALIMENTOS & BEBIDAS </li>
+                            </a>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <div class="area3">
+        <div class="container">
+            <div class="area3-conteudo">
+                <div class="area3-title">
+                    <h1 class="tilte-h1">
+                        SUSTENTABILIDADE
+                    </h1>
+                </div>
+                <div class="box2">
+                    <div class="area3-img">
+                        <div class="img">
+                            <img src="img/area3.webp" alt="">
+                        </div>
+                        <div class="box-area">
+                            <div class="box-area-tex1">
+                                <h1 class="box-area-tex1-h1">
+                                    ODS - OBJETIVOS DO DESENVOLVIMENTO SUSTENTÁVEL
+                                </h1>
+                            </div>
+                            <div class="box-area-tex2">
+                                <h1 class="box-area-tex2-h1">
+                                    A WEG, como forma de reafirmar seu compromisso com a sustentabilidade, tornou-se
+                                    signatária dos Objetivos de Desenvolvimento Sustentável.
+                                </h1>
+                            </div>
+                            <div class="vejamais">
+                                <a href=""> VEJA MAIS SOBRE O ASSUNTO </a>
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <img src="img/seta esquerda.png" alt="">
+                            <img src="img/seta direita.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="align">
+                fsfsdfdsf
+            </div>
+        </div>
+    </div>
+
+    <div class="area4">
+        <div class="container">
+            <div class="area4-conteudo">
+                <div class="area4-title">
+                    <h1 class="area4-title-h1">
+                        LANÇAMENTOS
+                    </h1>
+                </div>
+                <div class="area4-resume">
+                    <h1 class="area4-resume-h1">
+                        Conheça as novidades apresentadas pelas nossas Unidades de Negócio
+                    </h1>
+                </div>
+
+                <div class="expoitens">
+                    <div class="item1">
+                        <a href=""><img src="img/LANÇAMENTO1.webp" alt=""></a>
+                    </div>
+                    <div class="item2">
+                        <a href=""><img src="img/LANÇAMENTO2.webp" alt=""></a>
+                    </div>
+                    <div class="item3">
+                        <a href=""><img src="img/LANÇAMENTO3.webp" alt=""></a>
+                    </div>
+                    <div class="item4">
+                        <a href=""><img src="img/LANÇAMENTO4.webp" alt=""></a>
+                    </div>
+                    <div class="item5">
+                        <a href=""><img src="img/LANÇAMENTO5.webp" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="set">
+                    <img src="img/seta esquerda.png" alt="">
+                    <img src="img/seta direita.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="area5">
+        <div class="container">
+            <div class="title">
+                NOTÍCIAS
+            </div>
+
+            <div class="apart">
+
+                <div class="area5-img">
+                    <img src="img/area5.webp" alt="">
+                </div>
+
+                <div class="apartflex">
+                    <div class="area5-text">
+                        <div class="text1">
+                            <h1 class="date">
+                                13/ABR
+                            </h1>
+                        </div>
+                        <div class="text">
+                            Eventos Kaizen movimentam o Grupo WEG
+                        </div>
+                    </div>
+
+                    <div class="area5-text">
+                        <div class="text1">
+                            <h1 class="date">
+                                12/ABR
+                            </h1>
+                        </div>
+                        <div class="text">
+                            WEG faz parceria com o MIT
+                        </div>
+                    </div>
+
+                    <div class="area5-text">
+                        <div class="text1">
+                            <h1 class="date">
+                                04/ABR
+                            </h1>
+                        </div>
+                        <div class="text">
+                            GWM faz parceria com WEG para criar pontos de recarga rápida e fornecer carregadores para
+                            seus clientes com 50% de desconto
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vertudo">
+                <a href="">VER TUDO</a>
+            </div>
+
+            <div class="new-cont">
+                <div class="newslatter">
+                    <div class="news-text">
+                        <h1 class="news1"> RECEBA NOSSA </h1>
+                        <h1 class="news2"> NEWSLETTER</h1>
+                    </div>
+                    <div class="email">
+                        <input type="email" placeholder="DIGITE SEU E-MAIL" required>
+                        <a class="news-buttom" href="">QUERO RECEBER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="container">
+            <div class="foot-cont-icones">
+                <div class="redes">
+                    <a href=""><img src="img/email.png" alt=""></a>
+                    <a href=""><img src="img/tel.avif" alt=""></a>
+                    <a href=""><img src="img/zap.png" alt=""></a>
+                    <a href=""><img src="img/insta.webp" alt=""></a>
+                </div>
+                <div class="slogan">
+                    <img src="img/slogan.gif" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="opcoes">
+            <div class="op-menu">
+                <nav>
+                    <ul>
+                        <a href="">
+                            <li>SOBRE A WEG</li>
+                        </a>
+                        <span>|</span>
+                        <a href="">
+                            <li> PRODUTOS</li>
+                        </a>
+                        <span>|</span>
+                        <a href="">
+                            <li> SOLUÇÕES</li>
+                        </a>
+                        <span>|</span>
+                        <a href="">
+                            <li> INVESTIDORES</li>
+                        </a>
+                        <span>|</span>
+                        <a href="">
+                            <li> ÉTICA</li>
+                        </a>
+                        <span>|</span>
+                        <a href="">
+                            <li> SUPORTE</li>
+                        </a>
+                        <span>|</span>
+                        <a href="">
+                            <li> LINKS RÁPIDOS </li>
+                        </a>
+                        <span>|</span>
+                        <a href="">
+                            <li> CENTRAL DE DOWNLOADS</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="op-finep">
+            <a href="http://www.finep.gov.br/" target="_blank"> <img src="img/finep.webp" alt=""></a>
+        </div>
+
+        <div class="final">
+            <div class="op-menu">
+                <nav>
+                    <ul>
+                        <a href="">
+                            <li>Aviso de Privacidade</li>
+                        </a>
+                        <span>|</span>
+                        <a href="">
+                            <li> Declaração de Uso de Cookies</li>
+                        </a>
+                        <span>|</span>
+                        <a href="">
+                            <li> Termos e Condições de Uso</li>
+                        </a>
+                        <span>|</span>
+                        <a href="">
+                            <li> RSS</li>
+                        </a>
+                        <span>|</span>
+                        <a href="">
+                            <li> © Desenvolvido por: <strong> Leonardo Hansen Laranja </strong> </li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="arquivo.js"></script>
+</body>
+
+</html>

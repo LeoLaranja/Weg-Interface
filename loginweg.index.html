@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginWegLeo</title>
+    <link rel="stylesheet" href="loginweg.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script type="text/javascript">
+        window.onload = function ( ) {
+                document.querySelector(".MenuMobile").addEventListener("click", function( ){
+                    if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                        document.querySelector(".menu nav ul").style.display = 'none';
+                    } else {
+                        document.querySelector(".menu nav ul").style.display = 'flex';
+                    }
+                });
+            };
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="container">
+            <div class="img-menu">
+                <div class="area-img">
+                    <a href=""><img src="img/Parceiro-Weg-removebg-preview.png" alt=""></a>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="MenuMobile">
+                    <div class="mm-line">
+
+                    </div>
+                    <div class="mm-line">
+                        
+                    </div>
+                    <div class="mm-line">
+                        
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <a onmouseenter="mostrar()"  class="sobre"><li>SOBRE A WEG</li></a>
+                        <a onmouseenter="mostrar2()" class="sobre"><li>PRODUTOS</li></a>
+                        <a onmouseenter="mostrar3()" class="sobre"><li>SOLUÇÕES</li></a>
+                        <a class="hoverdif" href=""><li>INVESTIDORES</li></a>
+                        <a onmouseenter="mostrar4()" class="sobre" ><li>ÉTICA</li></a>
+                        <a onmouseenter="mostrar5()" class="sobre"><li>SUPORTE</li></a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="busque-menu">
+                <div class="busque-menu-nav">
+                    <nav>
+                        <ul>
+                            <a href=""><li>Notícias</li></a>
+                            <span>|</span>
+                            <a href=""><li> Treinamento</li></a>
+                            <span>|</span>
+                            <a href=""><li> Trabalhe Conosco</li></a>
+                            <span>|</span>
+                            <a href="loginweg.index.html" target="_blank"><li><img src="img/Login.png" alt=""></li></a>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="busque-menu-buscar">
+                    <input name="text" type="text" class="inputtop" placeholder="Buscar por produto, categoria ou código">
+                    <img src="img/lupa.png" alt=""> 
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="barra">
+        <div class="barra-area">
+            <div class="text1">
+                <h1 class="text1">
+                    <a href="index.html"> HOME </a>
+                </h1>
+            </div>
+                
+            <img class="img-barra" src="img/seta-direita-2-by-vexels.png" alt="">
+                
+            <div class="text2">
+                <h1 class="text2">
+                    ACESSO AO E-COMMERCE WEG
+                </h1>
+            </div>
+        </div>
+    </div>
+   
+    <section class="section-login">
+        <div class="login-area">
+            <div class="acesso">
+                <h1>Acesso ao e-commerce WEG</h1>
+            </div>
+            <div class="nome-usuario">
+                <h1 class="usuario">Nome de usuário*</h1>
+                <input class="inputusuario" type="text" name="nome" placeholder="Nome de usuário*"> 
+                <h1 class="senha">Senha*</h1>
+                <input class="inputusenha" type="password" name="senha" placeholder="Senha*">
+                <img onclick="mostrarsenha()" class="olho" src="img/olho.svg" alt="">
+                <a class="esqueceu" href="">Esqueceu a sua senha?</a>
+                <div class="entrar-aera">
+                    <input class="entrar" type="submit" value="ENTRAR">
+                </div>
+                <hr>
+                <div class="novo" >
+                    <h5 class="novocliente">Novo Cliente?</h5>
+                    <a class="criarconta" href="">CRIAR CONTA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+        <div class="container">
+                <div class="foot-cont-icones">
+                    <div class="redes">
+                        <a href=""><img src="img/email.png" alt=""></a>
+                        <a href=""><img src="img/tel.avif" alt=""></a>
+                        <a href=""><img src="img/zap.png" alt=""></a>
+                        <a href=""><img src="img/insta.webp" alt=""></a>
+                    </div>
+                    <div class="slogan">
+                        <img src="img/slogan.gif" alt="">
+                    </div>
+                </div>
+        </div>
+        
+        <div class="opcoes">
+            <div class="op-menu">
+                <nav>
+                    <ul>
+                        <a href=""><li>SOBRE A WEG</li></a>
+                        <span>|</span>
+                        <a href=""><li> PRODUTOS</li></a>
+                        <span>|</span>
+                        <a href=""><li> SOLUÇÕES</li></a>     
+                        <span>|</span>
+                        <a href=""><li> INVESTIDORES</li></a> 
+                        <span>|</span>
+                        <a href=""><li> ÉTICA</li></a> 
+                        <span>|</span>
+                        <a href=""><li> SUPORTE</li></a> 
+                        <span>|</span>
+                        <a href=""><li> LINKS RÁPIDOS </li></a> 
+                        <span>|</span>
+                        <a href=""><li> CENTRAL DE DOWNLOADS</li></a>        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="op-finep">
+           <a href="http://www.finep.gov.br/" target="_blank"> <img src="img/finep.webp" alt=""></a>
+        </div>
+
+        <div class="final">
+            <div class="op-menu">
+                <nav>
+                    <ul>
+                        <a href=""><li>Aviso de Privacidade</li></a>
+                        <span>|</span>
+                        <a href=""><li> Declaração de Uso de Cookies</li></a>
+                        <span>|</span>
+                        <a href=""><li> Termos e Condições de Uso</li></a>     
+                        <span>|</span>
+                        <a href=""><li> RSS</li></a> 
+                        <span>|</span>
+                        <a href=""><li> © 2023 WEG. Todos os direitos reservados.</li></a>      
+                    </ul>
+                </nav>
+            </div>
+        </div>
+       
+    </footer>
+
+    <script src="arquivo.js"></script>
+</body>
+</html>
